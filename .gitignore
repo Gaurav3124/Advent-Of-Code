@@ -1,2 +1,34 @@
+.vscode/
+*.o
+*.dSYM/
+*.log
+*.tmp
 .DS_Store
-2024/.vscode
+# Object files
+*.o
+*.obj
+
+# Executable files
+*.exe
+*.out
+*.app
+*.elf
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+*.dll
+*.so
+*.dylib
+
+# Debug and profiling files
+*.gch
+*.pch
+*.pdb
+*.ilk
+*.map
+*.mem
+*.prof
+*.dSYM/
