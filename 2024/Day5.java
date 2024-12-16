@@ -88,8 +88,10 @@ public class Day5 {
         Map<Integer, Page> rules = new HashMap<>();
         while(!input.get(0).isBlank()) {
             // Read in rules of which pages must go before (pre) and after (post) this Page
-            int[] nums = Arrays.stream(input.get(0).split("\\|")).mapToInt(str -> Integer.parseInt(str)).toArray();
-            if (!rules.containsKey(nums[0])) { rules.put(nums[0], new Page(nums[0])); }
+            int[] nums = Arrays.stream(input.get(0).split("\\|"))
+                               .mapToInt(str -> Integer.parseInt(str))
+                               .toArray();
+            if (!rules.containsKey(nums[0]))     { rules.put(nums[0], new Page(nums[0])); }
             if (!rules.containsKey(nums[1])) { rules.put(nums[1], new Page(nums[1])); }
             
             rules.get(nums[0]).post.add(nums[1]);
